@@ -1,8 +1,14 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+
+/**
+ * @type {import('next').NextConfig}
+ **/
 const nextConfig = {
-  reactStrictMode: true,
   output: 'export',
-  distDir: 'docs',
+  basePath: '/gh-pages-test',
+  experimental: {
+    appDir: true,
+  },
 }
 
 module.exports = nextConfig
